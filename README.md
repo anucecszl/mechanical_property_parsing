@@ -12,4 +12,47 @@ Parsing rules for alloy phase:
 2. The phases are divided into four groups: FCC, BCC, HCP, IM
 3. The output of the phase parser should be an N x 4 array contains all the phases information of the alloy, where N is the number of alloys. The phase result should be either 1 or 0.
 
+Mechanical Property Parsing
+This repository contains scripts that parse 1014 alloy compositions and their mechanical properties, collected by Birbilis' research group. The scripts allow you to parse the alloy composition and phase, following specific rules.
 
+Table of Contents
+Getting Started
+Parsing Rules
+Alloy Composition
+Alloy Phase
+Usage
+License
+Getting Started
+The main script main.py reads and parses alloy information from HEA_mechanical_dataset_ZL_full.xlsx and outputs an Excel file parsed_result_mechanical.xlsx.
+
+Prerequisites
+Python 3.x
+Required libraries: [list any required libraries]
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/your-username/mechanical_property_parsing.git
+Install the required packages:
+
+bash
+Copy code
+pip install -r requirements.txt
+Parsing Rules
+Alloy Composition
+The alloy compositions are in forms like CoFeNiSi0.5 or Al20(CoCrCuFeMnNiTiV)80.
+When there are parentheses, the program first identifies the parentheses in the composition, then parses the composition sequentially.
+The output of the composition parser is an N x M array containing all the molar ratios of elements that occurred in the dataset, where N is the number of alloys, and M is the number of elements.
+Alloy Phase
+The phases are in the form of Phase1+Phase2+....
+The phases are divided into four groups: FCC, BCC, HCP, IM.
+The output of the phase parser is an N x 4 array containing all the phase information of the alloy, where N is the number of alloys. The phase result should be either 1 or 0.
+Usage
+Run the main script to begin parsing:
+
+bash
+Copy code
+python main.py
+License
+This project is licensed under the MIT License - see the LICENSE.md file for details.

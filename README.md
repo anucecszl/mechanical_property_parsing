@@ -1,4 +1,4 @@
-## Mechanical Property Parsing
+# Mechanical Property Parsing
 
 This repository contains scripts that parse 1014 alloy compositions and their mechanical properties, collected by Birbilis' research group.
 

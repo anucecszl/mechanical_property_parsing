@@ -1,8 +1,8 @@
 # Mechanical Property Parsing
 
-This repository contains scripts that parse 1014 alloy compositions and their mechanical properties, collected by Birbilis' research group.
+This repository contains scripts that parse the multi-principal element alloys (MPEA) dataset, which includes 1014 alloys' element compositions and mechanical properties, collected by Birbilis' research group.
 
-The main script `main.py` reads and parses alloy information from `HEA_mechanical_dataset_ZL_full.xlsx` and outputs an Excel file `parsed_result_mechanical.xlsx`.
+The main script `main.py` reads and parses alloy information from `MPEA_mechanical_dataset.xlsx` and outputs an Excel file `parsed_result.xlsx`.
 
 ## Parsing Rules
 
